@@ -70,6 +70,16 @@ some users to 'burst' RAM use occasionally (and use more RAM than the guarantee)
 
 The same applies to cpu usage too! 
 
+Explicitly setting a public IP
+------------------------------
+
+If you are managing your own DNS and wish to specify the public IP of the JupyterHub's proxy service
+rather than use the one furnished by Kubernetes, you can do so in the config.yaml:
+
+    .. code-block:: yaml
+
+       publicIP: 111.222.333.444
+       
 Extending your software stack with s2i
 --------------------------------------
 
